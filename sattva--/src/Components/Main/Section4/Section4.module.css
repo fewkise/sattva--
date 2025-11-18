@@ -1,0 +1,35 @@
+.forQuestion {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            border-bottom: 1px solid #EAEBED;
+        }
+        .forAnswer {
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+        .fornazv {
+            text-align: center;
+            p {
+                font-size: 35px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+.four_sec_all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .qacontainer{
+        width: 70%;
+    }
+    .four_sec {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+}

@@ -1,0 +1,103 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; /* 4 колонки одинаковой ширины */
+    background-color: #C0D1E7;
+    border-radius: 20px;
+    .card:nth-child(1) {
+        border-top-right-radius: 0;
+    }
+    .card:nth-child(2) {
+        border-bottom-left-radius: 0;
+    }
+    .card:nth-child(3) {
+        border-bottom-right-radius: 0;
+    }
+    .card:nth-child(4) {
+        border-top-left-radius: 0;
+    }
+    .card:nth-child(5) {
+        border-bottom-right-radius: 0;
+    }
+    .card:nth-child(6) {
+        border-top-right-radius: 0;
+    }
+    .card:nth-child(7) {
+       border-bottom-left-radius: 0;
+    }
+    .card:nth-child(8) {
+       border-top-right-radius: 0;
+    }
+    .card:nth-child(9) {
+       border-bottom-right-radius: 0;
+    }
+    .card:nth-child(10) {
+       border-top-left-radius: 0;
+    }
+     .card:nth-child(11) {
+       border-top-right-radius: 0;
+    }
+     .card:nth-child(12) {
+        border-bottom-left-radius: 0;
+    }
+}
+.card {
+  min-width: 150px;   /* минимальная ширина */
+    border: 1px solid#C0D1E7;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #E0EEFF;
+    color: #6B7276;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: 0.5s;
+    &:hover {
+        background-color: #FFFFFF;
+    }
+    p:nth-child(1){
+        font-size: 27px;
+        font-weight: 300;
+    }
+    p:nth-child(2){
+        font-size: 38px;
+        font-weight: 300;
+    }
+}
+.sec_three_all {
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #E0EEFF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .sec_three {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        row-gap: 4rem;
+    }
+}
+    .day{
+        display: flex;
+        color: #6B7276;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 2rem;
+        p{
+            font-size: 80px;
+        }
+        div:nth-child(2){
+            background-color: #6B7276;
+            width: 90%;
+            height: 1px;
+        }
+    }
