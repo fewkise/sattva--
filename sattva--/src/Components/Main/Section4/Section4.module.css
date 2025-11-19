@@ -24,6 +24,9 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     .qacontainer{
         width: 70%;
     }
@@ -32,4 +35,17 @@
         justify-content: space-between;
         width: 80%;
     }
+}
+.sleva {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    p:nth-child(2){
+        width: 50%;
+        font-size: 18px;
+        color: #6B7276;
+    }
+}
+.forQuestion:nth-child(1){
+    border-top:1px solid #EAEBED ;
 }

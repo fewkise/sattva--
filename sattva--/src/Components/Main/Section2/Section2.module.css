@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     .sec_two {
         display: flex;
         flex-direction: column;

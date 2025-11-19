@@ -41,7 +41,7 @@ const Section4 = () => {
     <div className={styles.four_sec_all}>
       <div className={styles.four_sec}>
         <div className={styles.sleva}>
-            <p>Новичкам</p>
+            <p style={{fontSize:"80px", color:"#6B7276", fontWeight:"300"}}>Новичкам</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <div><img src={imgsit} alt="" /></div>
         </div>
@@ -55,7 +55,7 @@ const Section4 = () => {
                   onClick={() => toggleAnswer(idx)}
                   style={{ cursor: 'pointer' }}
                 >
-                  <div style={{display:"flex", alignItems:"center", columnGap:"1rem", fontWeight:"600", color:"#6B7276"}}>
+                  <div style={{display:"flex", alignItems:"center", columnGap:"3rem", fontWeight:"600", color:"#6B7276"}}>
                     <p>0{idx+1}.</p>
                     <p >{question}</p>
                   </div>
