@@ -1,0 +1,89 @@
+.sec_eight_all {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../../public/2021-01-20 23.55.png');
+    background-repeat: no-repeat;
+
+    background-size: 120%;
+    background-position: -380px 0px;
+    height: 45rem;
+    .eight_sec {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .txt {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        width: 60%;
+          z-index: 2; /* Place it above the blurred background */
+        p{
+            color: #FCFCFC;
+        }
+        p:nth-child(1){
+            font-size: 80px;
+            color: white;
+        }
+        p:nth-child(2){
+            width: 80%;
+            font-size: 18px
+        }
+        .forbtns {
+            display: flex;
+            column-gap: 2rem;
+            button:nth-child(1){
+                border: 1px solid #FFFFFF;
+                background-color: transparent;
+                color: #FFFFFF;
+            }
+            button:nth-child(2){
+                background-color: #B0BFD0;
+                color: #FCFCFC;
+                border: none;
+            }
+            button {
+                border-radius: 50px;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                cursor: pointer;
+                column-gap: 1rem;
+            }
+        }
+        .forglag {
+            display: flex;
+            column-gap: 1rem;
+            align-items: center;
+        }
+    }
+    .right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        .blur_back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent overlay */
+            backdrop-filter: blur(5px); /* Apply the blur effect */
+            z-index: 1; /* Place it behind the content */
+        }
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+}

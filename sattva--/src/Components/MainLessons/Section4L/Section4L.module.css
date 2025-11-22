@@ -1,0 +1,38 @@
+.sec_four_all {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    .sec_four {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            padding: 1rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            border-radius: 80px;
+            border: none;
+            cursor: pointer;
+            background-color: #B2C3DA;
+            color: #FFFFFF;
+        }
+        .zapis {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding-right: 4rem;
+            border-right: 1px solid #6B7276;
+        }
+        p{
+            color: #6B7276;
+            span {
+                color: #4e5356;
+                font-weight: 600;
+            }
+        }
+    }
+}

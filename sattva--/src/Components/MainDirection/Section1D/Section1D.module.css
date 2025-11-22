@@ -1,0 +1,74 @@
+.sec_one_all {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../../../../public/Знімок екрана 2023-06-02 о 18.20 1.png');
+    .sec_one {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        height: 100%;
+        .forblur {
+            display: flex;
+            flex-direction: column;
+            width:55%;
+            position: relative;
+
+            height: 100%;
+            .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(43, 43, 43, 0.137); /* Semi-transparent overlay */
+            backdrop-filter: blur(8px); /* Apply the blur effect */
+            }
+            .textblur {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                z-index: 2;
+                            margin: 7rem;
+                .foruls {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 1rem;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                        padding-left: 2rem;
+                        li{
+                            list-style:disc;
+
+                        }
+                    }
+                }
+            }
+        }
+        .fortext {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 7rem;
+            align-self: center;
+            margin-left: 10rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

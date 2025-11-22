@@ -1,0 +1,49 @@
+.sec_one_all {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12rem;
+    background-color: #F9F9F9;
+    padding-bottom: 12rem;
+    .twodiv {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        button {
+            padding: 1rem;
+            border-radius: 80px;
+            color: #FFFFFF;
+            border: none;
+            background-color: #B2C3DA;
+            cursor: pointer;
+        }
+    }
+    .fordiv {
+        display: flex;
+        column-gap: 2rem;
+        align-items: center;
+        .fordivdiv {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            p:nth-child(1){
+                font-size: 38px;
+            }
+        }
+    }
+    .sec_one {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        .fortext {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+                        p{
+                color: #6B7276;
+            }
+        }
+    }
+}

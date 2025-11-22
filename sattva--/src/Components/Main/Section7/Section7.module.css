@@ -1,0 +1,110 @@
+.sec_seven_all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F9F9F9;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .sec_seven {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        row-gap: 4rem;
+        .forbtns {
+            display: flex;
+            column-gap: 2rem;
+            align-items: center;
+            button {
+                border-radius: 50px;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                cursor: pointer;
+                column-gap: 1rem;
+            }
+            button:nth-child(1){
+                border: 1px solid #6B7276;
+                background-color: transparent;
+                color: #6B7276;
+            }
+            button:nth-child(2){
+                border: 1px solid #6B7276;
+                background-color: #6B7276;
+                color: #FCFCFC;
+            }
+        }
+        .events {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3rem;
+            .event {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                 border-top: 1px solid #6B7276;
+                .fortext {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 2rem;
+                    color: #6B7276;
+                    width: 40%;
+                    p:nth-child(1){
+                        font-size: 54px;
+                        color: #6B7276;
+                    }
+                    p:nth-child(2){
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .daycontainer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .forbtns {
+                display: flex;
+                column-gap: 2rem;
+                align-items: center;
+                button {
+                        display: flex;
+                        align-items: center;
+                        background-color: transparent;
+                        border: 1px solid #6B7276;
+                        border-radius: 50px;
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        padding-bottom: 1rem;
+                        padding-top: 1rem;
+                        column-gap: 1rem;
+                        color: #6B7276;
+                        
+                        cursor: pointer;
+                }
+            }
+            .day {
+                display: flex;
+                color: #6B7276;
+                font-size: 24px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 2rem;
+                width: 85%;
+                margin-right: 2rem;
+                p{
+                    font-size: 80px;
+                }
+                div{
+                    background-color: #6B7276;
+                    width: 60%;
+                    height: 1px;
+                }
+            }
+        }
+    }
+}

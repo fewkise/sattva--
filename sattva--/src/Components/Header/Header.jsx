@@ -10,7 +10,7 @@ const Header = () => {
         <Link to='/'><div><img style={{mixBlendMode:"darken"}} src={logo} alt="" /></div></Link>
         <ul>
             <Link to='/Naprav'><li><p>Направления</p></li></Link>
-            <Link to='/Teachers'><li><p>Преподаватели</p></li></Link>
+            <Link to='/Direction'><li><p>Преподаватели</p></li></Link>
             <li><p>Прайслист</p><button><div><img src={btnstrelka} alt="" /></div></button></li>
             <li><p>О нас</p><button><div><img src={btnstrelka} alt="" /></div></button></li>
             <li><p>Контакты</p></li>

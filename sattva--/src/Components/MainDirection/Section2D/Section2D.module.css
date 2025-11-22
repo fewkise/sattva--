@@ -1,0 +1,80 @@
+.day {
+                display: flex;
+                color: #6B7276;
+                font-size: 24px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 2rem;
+                width: 85%;
+                margin-right: 2rem;
+                p{
+                    font-size: 80px;
+                }
+                div{
+                    background-color: #6B7276;
+                    width: 60%;
+                    height: 1px;
+                }
+            }
+.sec_two_all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F8F8F8;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    row-gap: 5rem;
+    .sec_two {
+        width: 80%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+}
+.slide {
+    display: flex;
+    padding: 4rem;
+    background-color: #FFFFFF;
+    column-gap: 5rem;
+    width: 90%;
+    align-self: center;
+    border-radius: 80px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    .foropis{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        color: #6B7276;
+    }
+}
+.navigation {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 2rem;
+            .navbtns {
+                display: flex;
+                align-items: center;
+                column-gap: 2rem;
+                button {
+                    padding: 1rem;
+                    padding-left: 1.4rem;
+                    padding-right: 1.4rem;
+                    cursor: pointer;
+                    border: 1px solid #6B7276;
+                    border-radius: 50%;
+                    background-color: transparent;
+                }
+            }
+            .forline {
+                width: 90%;
+                height: 4px;
+            }
+        }
