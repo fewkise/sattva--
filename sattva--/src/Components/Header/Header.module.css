@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap") ;
+
 *{
     margin: 0;
     padding: 0;
     li {
         list-style: none;
     }
+    font-family: "Cormorant Infant";
     a {
         text-decoration: none;
         color: #6B7276;
@@ -12,7 +15,7 @@
         background-color: #F9F9F9;
     }
 }
-.headerall {
+header {
     display: flex;
     align-items: center;
     justify-content: center;

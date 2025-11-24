@@ -153,3 +153,87 @@
      }
 
 }
+.menuContainer {
+  gap: 10px; /* Расстояние между разными кнопками меню */
+  width: 100%;
+    display: flex;
+  justify-content: space-between;
+}
+
+/* Кнопка меню (заголовок) */
+.menuButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 80px;
+  cursor: pointer;
+  text-align: left;
+  color: #6B7276;
+column-gap: 0.5rem;
+  font-size: 16px;
+  transition: background-color 0.3s ease; 
+}
+
+.menuButton:hover {
+  background-color: #f1f1f1;
+}
+
+/* Стили для стрелки (или заменяющего ее текста ^) */
+.menuButton div {
+    /* Красивый и плавный переход для поворота */
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    display: inline-block; /* Необходимо для корректного вращения */
+}
+
+/* Класс, который добавляется к стрелке при открытии меню */
+.arrowOpen {
+  transform: rotate(180deg); /* Поворачиваем стрелку на 180 градусов */
+}
+
+/* Контейнер для опций (Изначальное состояние) */
+.optionsContainer {
+  /* Изначально высота 0 и скрываем переполнение, чтобы контент не вылезал */
+  height: auto;
+  overflow: hidden; 
+    position: absolute;
+  position: absolute; /* КЛЮЧЕВОЕ СВОЙСТВО: позиционируется абсолютно */
+  width: 75%; /* КЛЮЧЕВОЕ СВОЙСТВО: занимает 100% ширины РОДИТЕЛЬСКОГО БЛОКА (.menuWrapper) */
+  top: 100%; /* Появляется сразу под кнопкой */
+  max-height: 0; 
+
+  /* Более медленный и плавный переход для max-height */
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+  background-color: white;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Класс, который добавляется при открытии меню (Конечное состояние анимации) */
+.optionsOpen {
+
+  max-height: 400px;
+}
+
+/* Отдельная опция внутри меню */
+.menuOption {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #6B7276;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.menuOption:hover {
+    color: #36B9EB;
+}
+.menuWrapper {
+    position: relative; /* КЛЮЧЕВОЕ СВОЙСТВО: меню будет позиционироваться относительно этой ширины */
+    width: 100%; /* Убедитесь, что обертка занимает всю доступную ширину */
+}

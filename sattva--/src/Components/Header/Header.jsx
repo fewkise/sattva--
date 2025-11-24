@@ -2,18 +2,18 @@ import React from 'react'
 import styles from './Header.module.css'
 import logo from '../../../public/7 1 (1).png'
 import btnstrelka from '../../../public/Polygon 1.png'
-import { Link } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 const Header = () => {
   return (
-    <div className={styles.headerall}>
+    <header>
       <nav>
-        <Link to='/'><div><img style={{mixBlendMode:"darken"}} src={logo} alt="" /></div></Link>
+        <NavLink to='/'><div><img style={{mixBlendMode:"darken"}} src={logo} alt="" /></div></NavLink>
         <ul>
-            <Link to='/Naprav'><li><p>Направления</p></li></Link>
-            <Link to='/Direction'><li><p>Преподаватели</p></li></Link>
-            <li><p>Прайслист</p><button><div><img src={btnstrelka} alt="" /></div></button></li>
-            <li><p>О нас</p><button><div><img src={btnstrelka} alt="" /></div></button></li>
-            <li><p>Контакты</p></li>
+            <NavLink to='/Naprav'><li><p>Направления</p></li></NavLink>
+            <NavLink to='/Direction'><li><p>Преподаватели</p></li></NavLink>
+            <NavLink><li><p>Прайслист</p><button><div><img src={btnstrelka} alt="" /></div></button></li></NavLink>
+            <NavLink><li><p>О нас</p><button><div><img src={btnstrelka} alt="" /></div></button></li></NavLink>
+            <NavLink><li><p>Контакты</p></li></NavLink>
         </ul>
         <div className={styles.location}>
             <button><p>Москва</p><div><img src={btnstrelka} alt="" /></div></button>
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
         </div>
       </nav>
-    </div>
+    </header>
   )
 }
 

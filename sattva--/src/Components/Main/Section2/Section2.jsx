@@ -2,6 +2,15 @@ import React, { useState, useRef } from 'react'
 import styles from './Section2.module.css'
 import calendar from '../../../../public/ph_calendar-check.png'
 import btnstrelka from '../../../../public/Polygon 1.png'
+const menuItems = [
+  'День недели',
+  'Тип занятий',
+  'Учитель',
+  'Студия',
+  'Тип практики',
+  'Сложность',
+];
+
 const scheduleData = {
   среда: {
     date: '3 мая',
@@ -82,13 +91,18 @@ const ScheduleDay = ({ dayName, dayData, isOpen }) => {
 
 const Section2 = () => {
   const [showFullWeek, setShowFullWeek] = useState(false)
-
+  const [openMenus, setOpenMenus] = useState({});
   const [openDays, setOpenDays] = useState({
     четверг: false,
     пятница: false,
     суббота: false,
   })
-
+   const toggleMenu = (index) => {
+    setOpenMenus(prev => ({
+      ...prev,
+      [index]: !prev[index], // Переключаем состояние для конкретного индекса
+    }));
+  };
   const handleShowFullWeek = () => {
     setShowFullWeek(true)
 
@@ -103,7 +117,7 @@ const Section2 = () => {
     setOpenDays({ четверг: false, пятница: false, суббота: false })
     setTimeout(() => setShowFullWeek(false), 500)
   }
-
+  const options = ['Вся неделя', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
   return (
     <div className={styles.sec_two_all}>
         <div className={styles.sec_two}>
@@ -116,14 +130,37 @@ const Section2 = () => {
         </div>
       </div>
 
-      <div className={styles.category}>
-        <button><p>День недели</p><div><img src={btnstrelka} alt="" /></div></button>
-        <button><p>Тип занятий</p><div><img src={btnstrelka} alt="" /></div></button>
-        <button><p>Учитель</p><div><img src={btnstrelka} alt="" /></div></button>
-        <button><p>Студия</p><div><img src={btnstrelka} alt="" /></div></button>
-        <button><p>Тип практики</p><div><img src={btnstrelka} alt="" /></div></button>
-        <button><p>Сложность</p><div><img src={btnstrelka} alt="" /></div></button>
-      </div>
+      <div className={styles.menuContainer}>
+      {menuItems.map((item, index) => (
+        <div key={index} className={styles.menuWrapper}>
+          <button 
+            className={styles.menuButton} 
+            onClick={() => toggleMenu(index)}
+            // Добавляем класс, если меню открыто, для поворота стрелки
+            aria-expanded={!!openMenus[index]}
+          >
+            <p>{item}</p>
+            <div>
+              {/* Используйте ваш импорт картинки здесь */}
+              {/* <img src={btnstrelka} alt="toggle arrow" className={openMenus[index] ? styles.arrowOpen : styles.arrowClosed} /> */}
+              {/* Временная замена стрелки текстом для примера */}
+        
+              <div className={openMenus[index] ? styles.arrowOpen : styles.arrowClosed}><img src={btnstrelka} alt="" /></div>
+            </div>
+          </button>
+          
+          {/* Контейнер с опциями, который плавно разворачивается */}
+          <div className={`${styles.optionsContainer} ${openMenus[index] ? styles.optionsOpen : ''}`}>
+            {/* Опции появляются только если меню открыто, чтобы анимация была плавной */}
+            {openMenus[index] && options.map((option, optIndex) => (
+                <div key={optIndex} className={styles.menuOption}>
+                    {option}
+                </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
 
       <div className={styles.rasp_all}>
         <ScheduleDay dayName="среда" dayData={scheduleData['среда']} isOpen={true} />

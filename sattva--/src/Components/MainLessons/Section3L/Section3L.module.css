@@ -1,0 +1,22 @@
+.sec_three_all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E7F2FF;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .sec_three {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+        p{
+            font-size: 38px;
+            color: #6B7276;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
